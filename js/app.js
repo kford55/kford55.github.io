@@ -20,5 +20,5 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       url: "/contact",
       templateUrl: "/partials/contact.html"
     });
-
+    $locationProvider.html5Mode(true);
 });
