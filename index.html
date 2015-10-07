@@ -31,7 +31,7 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index" ng-app="PersonalWebsiteApp">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -51,16 +51,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="https://kford55.github.io/#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="https://kford55.github.io/#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#projects">Projects</a>
+                        <a href="projects">Projects</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="contact">Contact</a>
                     </li>
                     <li class="page-scroll">
                         <a href="pdf/resume.pdf">Resume</a>
@@ -71,94 +71,15 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/kenWebsite.gif" alt="">
-                    <div class="intro-text">
-                        <span class="name">Kenneth Ford</span>
-                        <span class="skills">Software Engineer - Graduating Computer Engineering Student</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Portfolio Grid Section -->
-    <section id="about">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-12" style="margin-bottom:10px;">
-                    <h2>About Me</h2>
-                </div>
-            </div>
-            <div class="row">
-                <ul style="list-style-type:square;list-style:none;">
-                    <li><p>Senior Computer Engineering Student at New Jersey Institute of Technology (NJIT)<p></li>
-                    <li><p>Software Engineer of many different disciplines including Web (AngularJS, Python, PHP), Mobile(Android), Big Data (Hadoop)</p></li>
-                    <li><p>Strong Motivation to Learn, Whether It Be On My Own, Meetups and Presentations, or Major Conferences.</p></li>
-                    <li><p>Love building and working on things that I feel really help people or make their lives better. I need my work to have an impact.</p></li>
-                    <a href="pdf/resume.pdf"><li><p>Full Resume Available</p></li></a>
-                </ul>
-            </div>            
-<!--             <div class="row">
-                
-            </div>
-            <div class="row">
-                
-            </div> -->
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center" style="margin-bottom:10px;">
-                    <h2>Projects</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h3 style="margin-top:15px;text-align:center;">Home Automation System (Senior Design Project)</h3>
-                    <p>Me and my team developed a Home Automation System that would control the unlocking of your door, light dimming, and temperature control.</p>
-                    <p>Developed the hardware using 3 Particle Core microcontrollers, along with schematics and modules for the specific components.</p>
-                    <p>Architected and developed the software for the microcontrollers using the Arduino Wireframe language.</p>
-                    <p>Created a real-time web application to communicate to the hardware wirelessly using JavaScript/jQuery and HTML/Bootstrap.</p>
-                    <p>Submitted approved technical documents and presented to a panel of industry professionals.</p>
-                </div>
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h3 style="margin-top:15px;text-align:center;">NJIT Empty Classroom Finder Application (In Progress) <!-- <a href="https://github.com/kford55">GitHub</a> --></h3>
-                    <p>Develop a scraper in Python to gather information about all classes at NJIT including Room, Day, and Time.</p>
-                    <p>Creating a relational database structure to be understandable and efficient to store class information.</p>
-                    <p>Develop an API in Python (Flask) to handle requests for information, so it will not only be easily portable to IOS and web when I am done, but so it can be consumed by anyone else.</p>
-                    <p>Create an Android Mobile application to interface with the user that will be simple and intuitive.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center" style="margin-bottom:10px;">
-                    <h2>Contact Me</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                     <a href="https://www.github.com/kford55"><img style="padding:25px;" src="img/GitHub.png"/></a><a href="https://www.twitter.com/KennethFNJIT"><img style="padding:25px;" src="img/Twitter.png"/></a><a href="https://www.linkedin.com/in/kennethford93"><img style="padding:25px;" src="img/LinkedIn.png"/></a>                
-                </div>
-            </div>
-        </div>
-    </section>
+    <div ui-view></div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
+    <!-- Angular -->
+    <script src="js/angular-min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -166,12 +87,7 @@
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
+    
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
 
