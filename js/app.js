@@ -9,17 +9,13 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: "/partials/home.html"
     })
     .state('about', {
-      url: "/about",
-      templateUrl: "/partials/about.html"
+      url: "/#about",
+      templateUrl: "/partials/home.html"
     })
     .state('projects', {
       url: "/projects",
       templateUrl: "/partials/projects.html"
     })    
-    .state('experience', {
-      url: "/experience",
-      templateUrl: "/partials/experience.html"
-    })
     .state('contact', {
       url: "/contact",
       templateUrl: "/partials/contact.html"
