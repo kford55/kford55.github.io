@@ -1,6 +1,6 @@
 var myApp = angular.module('PersonalWebsiteApp', ['ui.router']);
 
-myApp.config(function($stateProvider, $locationProvider, $urlRouterProvider) {
+myApp.config(function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise("/");
 
 	$stateProvider
@@ -20,5 +20,4 @@ myApp.config(function($stateProvider, $locationProvider, $urlRouterProvider) {
       url: "/contact",
       templateUrl: "/partials/contact.html"
     });
-    $locationProvider.html5Mode(true);
 });
