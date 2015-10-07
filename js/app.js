@@ -1,6 +1,6 @@
 var myApp = angular.module('PersonalWebsiteApp', ['ui.router']);
 
-myApp.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+myApp.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 	$urlRouterProvider.otherwise("/");
 
 	$stateProvider
